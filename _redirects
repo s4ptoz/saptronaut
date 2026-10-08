@@ -1,0 +1,10 @@
+# Catatan: redirect www -> apex TIDAK bisa lewat _redirects
+# (Cloudflare Pages tidak mendukung domain-level redirect).
+# Diatur via Cloudflare Dashboard: Rules > Redirect Rules
+#   When: Hostname equals www.saptronaut.com
+#   Then: Dynamic redirect ke https://saptronaut.com (301, preserve path & query)
+
+# Redirect entry point lama (PHP) ke home
+/index.php   /  301
+/indexu.php  /  301
+/indexz.php  /  301
